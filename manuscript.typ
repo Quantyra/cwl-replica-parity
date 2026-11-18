@@ -1,0 +1,82 @@
+#set document(title: "A parity obstruction for rooted Fock-state weights in correlated worldline optomechanics", author: "Daniel Fredriksen")
+#set page(paper: "us-letter", margin: (top: 0.75in, bottom: 0.7in, x: 0.88in), numbering: "1")
+#set text(font: "Libertinus Serif", size: 11pt, lang: "en")
+#set par(justify: true, leading: 0.54em, spacing: 0.62em)
+#show heading.where(level: 1): it => block(above: 0.85em, below: 0.4em, text(size: 13pt, weight: "semibold", it.body))
+#let title = [A parity obstruction for rooted Fock-state weights in correlated worldline optomechanics]
+#align(center)[#text(size: 17pt, weight: "semibold", title) \
+#v(4pt)
+#link("https://orcid.org/0009-0002-9123-7435")[Daniel Fredriksen] · Quantyra Inc. \
+#text(size: 9.5pt)[#link("mailto:dfredriksen@quantyra.org")[#text("dfredriksen@quantyra.org")] · Manuscript draft]]
+#v(3pt)
+*Abstract.* A proposed optomechanical application of correlated worldline theory assigns an exclusive Fock endpoint the large-$N$ limit of its squared transition amplitude raised to the power $1/N$, before normalizing the endpoint weights. We examine the extension of this operation beyond the rotating-wave approximation in the lossless linearized model. An exactly timed pulse returns the centered Schrödinger–Newton state and every relative replica mode. For the joint vacuum endpoint the weight is zero at every odd replica count, while the even subsequence has a strictly positive limit at every sufficiently small fixed gravitational shift. The bright endpoint retains unit limiting weight, so an overall normalization cannot remove the discrepancy while preserving a nonzero bright probability. We distinguish this failure from the result of a product over sectors, and derive the positive ratio of two other exclusive weights without assigning a detector rate.
+
+= 1. What quantity is being tested?
+Wilson-Gerow, Chen and Stamp [1] use independent coherent labels in an $N$-replica sector to prepare one optical photon and the mechanical ground state. They differentiate once in each incident optical label. For an outgoing Fock state $j$, their Eqs. (119)–(126) give the preprobability
+$ w_j = lim_(N -> infinity) abs(K_(j,N))^(2/N). $
+In the passive model the total number of excitations is conserved. Only two replica-symmetric final Fock labels contribute. Our question is whether taking this same limit for each endpoint assigns a weight to every outcome of an ideal joint optical and mechanical number measurement when the full quadratic position coupling is kept. We use optical occupation first. In particular, the vacuum event $(0,0)$ must receive a well-defined weight even if its physical probability should vanish.
+
+An earlier CWL construction takes a root of a product over sectors to define a state propagator [2]. Diósi has questioned the observable interpretation of the rescaled CWL generator [3]. We give a specific oscillator endpoint at which the all-integer single-sector limit fails. The earlier common-drive Comment [4] studied a distinct, bare-sideband two-pulse calibration in the passive approximation. Here the laser uses a shifted reference, and one pulse makes the SN return exact with pair terms retained. Section 4 distinguishes the state preparation and limiting operations in [1] and [2].
+
+#pagebreak()
+= 2. An exactly returning pulse
+Use units $ℏ=1$. The same externally specified shifted reference $Omega_("ref")$ sets the negative laser detuning $-Omega_("ref")$ in both models. The incident state comprises one optical fluctuation photon and the centered mechanical ground state in each model. Apply a rectangular position interaction $F q_m^("phys")(a+a^dagger)$, with $g_("ref") = F/sqrt(2m Omega_("ref"))$. In the nominal calculation the shifted mechanical frequency $Omega$ equals $Omega_("ref")$. Write
+$ h = (Omega^2-omega^2)/(2 Omega^2), quad d = 2g_("ref")/Omega_("ref") = 21/221, quad T = Omega_("ref") t = 2pi sqrt(221/2), $
+where $omega$ is the bare mechanical frequency. The detuning, force and clock are common inputs independent of the final record. We assume ideal preparation, a lossless harmonic gravitational well and linearization about a prescribed intracavity field, as in the oscillator treatment of [1]. Selecting a reference at the required precision is an experimental assumption.
+
+In dimensionless mass-one coordinates, with $q=(q_a,q_m)^T$ and its conjugate $p$, the two-mode Hamiltonian is $(p^T p+q^T V q)/2$. Rotating optical and mechanical replica labels by the same orthogonal matrix diagonalizes the gravitational quadratic form of [1, Eqs. (85)–(92)] while preserving the position coupling. One collective pair has potential $V_h$; each of the $N-1$ relative pairs has $V_0$, where
+$ V_h = mat(1,d;d,1-2h). $
+In the centered SN model joint parity keeps the mechanical first moment zero, so its matrix is $V_0$ throughout. The frequencies $f_±=sqrt(1±d)$ then satisfy $T f_+ =22pi$ and $T f_- =20pi$. Both quadratures in both normal modes return. Hence SN and every relative CWL pair have identity propagation up to phase, including the counter-rotating interaction. In SN the final occupations $(1,0)$ and $(0,1)$ have probabilities one and zero.
+
+Let $x_i$ be independent incident optical coherent labels and $X=N^(-1/2) sum_i x_i$. At zero output labels, the relative identity kernel is constant. The centered collective Gaussian kernel reduces to $C exp(A X^2/2)$, where $A$ is the incident optical pair coefficient and $C$ is the collective vacuum amplitude. Both depend on $h$ and $C(0)$ has unit modulus. Quadratic propagation gives analytic coefficients near $h=0$ [5]. The canonical collective mechanical label equals $kappa=(omega/Omega)^(1/2)=(1-2h)^(1/4)$ times the mechanical source label of [1], from the square root of its coherent boundary metric. A zero mechanical label stays zero; this scale enters the occupied endpoint in Sec. 5.
+
+#pagebreak()
+= 3. Nonexistence of the vacuum limit
+Differentiate once in every $x_i$ and evaluate at zero. The power series of the vacuum kernel contains only even total degrees. For $N=2m$ only its degree-$2m$ term survives, with the coefficient of $x_1 dots.c x_(2m)$ in $(sum_i x_i)^(2m)$ equal to $(2m)!$. Up to phase this gives
+$ K_(v,2m+1)=0, quad K_(v,2m)= C (2m)!/(m!) (A/(4m))^m. $
+By Stirling's formula $(2m)!/m! ∼ sqrt(2)(4m/e)^m$. For fixed $h$ the odd rooted squared weights vanish and the even weights converge to $abs(A)/e$. We now show that $A$ is nonzero in the specified model.
+
+In the fixed mass-one coordinates the collective perturbation is $-h q_m^2$. Write $q_±=(q_a ± q_m)/sqrt(2)$ with the same convention for momenta. First variation of the collective unitary at exact return gives $I+i h G$ up to phase and $O(h^2)$ in fixed finite Fock matrix elements, where
+$ G = integral_0^T q_m(s)^2 dif s = T/4 sum_(sigma=±) (q_sigma^2+f_sigma^(-2) p_sigma^2). $
+The last equality follows by integrating the two free normal-mode rotations over distinct integer numbers of cycles. The mixed terms integrate to zero. Inserting $q=(a+a^dagger)/sqrt(2)$ and $p=(a-a^dagger)/(i sqrt(2))$ gives the incident optical coherent Hessian of $i G$ as $i T (2-f_+^(-2)-f_-^(-2))/8$. Thus
+$ A=-i alpha h+O(h^2), quad beta = (T d)/(4(1-d^2)), quad alpha=d beta>0. $
+Changing the free mechanical quadrature scale conjugates a propagator that is identity at $h=0$, so its derivative adds no term. In particular for every sufficiently small fixed $h>0$, the even limit is $abs(A(h))/e = 0.0553477234 h+O(h^2)>0$. The limit over all integers does not exist. The order matters: each subsequence limit is taken at fixed $h$ before any expansion of that limit.
+
+The parity here is the parity of all excitations in the whole sector. With one input photon per replica this is $(-1)^N$. The independent parity of each replica is broken by the inter-replica gravitational coupling. Although ordinary single-copy parity would forbid the vacuum, the even-sector amplitude above is explicitly nonzero.
+
+= 4. Comparison with the product over sectors
+Wilson-Gerow and Stamp [2, Sec. IV.A, Eq. (47) in arXiv v2] specify a state propagator proportional in modulus to a positive power of the product of sector amplitudes up to a cutoff. Their boundary construction inserts single-line state overlaps on every replica. In the 2024 harmonic ground preparation [1, Eqs. (76)–(77)] the multiplet vacuum is a correlated Gaussian: its collective width is set by $omega$ and its relative widths by $Omega$. For $N>1$ and $h>0$ it need not coincide with a product of identical one-line vacua. We therefore compare operations on explicitly stated inputs.
+
+#pagebreak()
+The optical input in both constructions can be selected by one incident optical Fock derivative per line. At sector size one the centered ground preparations have even mechanical parity. One photon and an even mirror state have opposite total parity to the joint vacuum. Their matrix element vanishes under the bilinear, parity-preserving Hamiltonian for any even initial and final mechanical widths. Thus a literal product including that sector is zero at every cutoff, for nonzero finite common normalization and positive root exponent. In particular, on the identical sequence $K_(v,N)$ derived in Sec. 3 the product is zero whereas the sector-root sequence has no limit. This conclusion requires no interchange of products, derivatives or logarithms. A prescription based on regulating exact zeros first would require its own order of limits. We do not identify the two preparations at every sector or deduce a normalized detector probability from a state propagator.
+
+= 5. Two finite limiting weights
+For the occupied mechanical endpoint, let $Y$ denote a collective canonical outgoing mechanical label. The kernel with optical input $X$ is $C exp((A X^2+2B X Y + D Y^2)/2)$. Using $G$ above gives $D=-i alpha h+O(h^2)$ from the outgoing mechanical Hessian, and $B=-i beta h+O(h^2)$ from the exchange coefficient $i T(f_+^(-2)-f_-^(-2))/8$. Differentiating once in each physical outgoing mechanical label inserts $kappa^N$. Define $m_n=n! [x^n y^n] exp((A x^2+2B x y+D y^2)/2)$, where square brackets extract coefficients. With relative evolution the identity,
+$ K_(d,N)=C kappa^N (N!)/(N^N) m_N, quad
+sum_(n>=0) m_n z^n = ((1-B z)^2-A D z^2)^(-1/2). $
+The generating function follows by grouping equal numbers of $x^2$ and $y^2$ factors. Its factors have roots in inverse coordinates $lambda_±=B ± sqrt(A D)$. At small positive $h$ the larger and smaller moduli are $(beta+alpha)h+O(h^2)$ and $(beta-alpha)h+O(h^2)$. For the larger root $lambda$ and the smaller $mu$, binomial convolution gives $m_n ∼ lambda^n (1-mu/lambda)^(-1/2)/sqrt(pi n)$. Indeed $b_k=binom(2k,k)/4^k$ satisfies $b_(n-k)/b_n -> 1$ at fixed $k$. This ratio is bounded for $k<=n/2$ and $O(sqrt(n))$ thereafter, where $abs(mu/lambda)^k$ suppresses the tail. Hence $w_d=kappa^2 abs(lambda)^2/e^2$.
+
+For the bright endpoint the relative kernel supplies $exp(sum_i x_i y_i)$, leaving collective correction coefficients $(A,B_o-1,D_o)$, all $O(h)$, with the output optical. Selecting $k$ indices outside the matched identity terms gives $K_(b,N)/C=sum_(k=0)^N ((N)_k/N^k)m_k(A,B_o-1,D_o)$ with $(N)_k=N!/(N-k)!$. The generating function bounds $abs(m_k)$ by $(abs(B_o-1)+sqrt(abs(A D_o)))^k$. Its base is less than one near $h=0$, so dominated convergence gives the correction generating function at one, finite and nonzero. Thus $w_b=1$, and
+$ w_d/w_b = (T d / (4e(1-d)))^2 h^2 + O(h^3) = 0.4068100435 h^2 + O(h^3). $
+This is a ratio of two existing preprobabilities. The vacuum-to-bright ratio still has distinct subsequential limits. An overall rescaling that preserves a nonzero bright probability cannot provide one vacuum probability.
+
+#pagebreak()
+= 6. Scope of the obstruction
+The passive example in [1] uses excitation conservation to exhaust its possible symmetric endpoints. Restoring the quadratic terms changes that premise. Even at exact return of every relative mode, the collective pair term makes the vacuum a necessary test of the proposed extension. A normalized joint detector law must explain which limiting operation applies to this record. The calculation gives neither an absolute dark event rate nor a sufficient number of experimental preparations. Improved calibration cannot decide which operation defines an event.
+
+The constant pulse and the harmonic, lossless dynamics isolate the obstruction. A physical apparatus would require an independently characterized resonance, preparation, switching, dissipation and number-resolving joint readout. The underlying rotating-wave calculation, gravitational interactions outside the harmonic model and alternative CWL measurement prescriptions have different assumptions.
+
+*Reproducibility.* The accompanying Node.js script checks the cycle counts, three first derivatives against direct spectral propagation, and labelled Gaussian contractions for one through five replicas. The limit statements follow analytically. The repository includes the editable manuscript and a proposed scope for Lean verification. #link("https://github.com/Quantyra/cwl-replica-parity")[Manuscript repository].
+
+*Use of AI.* OpenAI Codex assisted with algebra, source comparison, drafting and reproducibility checks. The author directed the investigation. Review provenance and the disposition of technical feedback are recorded in the repository.
+
+= References
+[1] J. Wilson-Gerow, Y. Chen and P. C. E. Stamp, “Testing quantum gravity using pulsed optomechanical systems,” _Phys. Rev. D_ *109*, 064078 (2024). #link("https://doi.org/10.1103/PhysRevD.109.064078")[Journal article] · #link("https://arxiv.org/html/2311.02033v1#S7")[Section VII and endpoint definitions].
+
+[2] J. Wilson-Gerow and P. C. E. Stamp, “Propagators in the correlated worldline theory of quantum gravity,” _Phys. Rev. D_ *105*, 084015 (2022). #link("https://doi.org/10.1103/PhysRevD.105.084015")[Journal article] · #link("https://arxiv.org/html/2011.14242v2#S4.SS1")[arXiv v2, Sec. IV.A].
+
+[3] L. Diósi, “Semiclassical world is one of infinite many cloneworlds in common spacetime,” _Phys. Rev. D_ *111*, 104065 (2025). #link("https://doi.org/10.1103/PhysRevD.111.104065")[Journal article].
+
+[4] D. Fredriksen, “Comment on ‘Testing quantum gravity using pulsed optomechanical systems’,” preprint (2026). #link("https://doi.org/10.5281/zenodo.24326219")[Archived version].
+
+[5] D. E. Bruschi, G. S. Paraoanu, I. Fuentes, F. K. Wilhelm and A. W. Schell, “General solution of the time evolution of two interacting harmonic oscillators,” _Phys. Rev. A_ *103*, 023707 (2021). #link("https://doi.org/10.1103/PhysRevA.103.023707")[Journal article].
