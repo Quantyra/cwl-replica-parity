@@ -1,0 +1,43 @@
+{
+  "title": "A parity obstruction to extending single-sector Fock weights in correlated worldline optomechanics",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "A theoretical note on a full quadratic optomechanical pulse and the large-replica Fock endpoint weights used in correlated worldline theory. It derives the different vacuum subsequence limits, compares the single-sector operation with a product over sectors, and distinguishes formal endpoint ratios from detector probabilities. Includes editable source and reproducible arithmetic checks.",
+  "creators": [
+    {
+      "name": "Fredriksen, Daniel",
+      "affiliation": "Quantyra Inc.",
+      "orcid": "0009-0002-9123-7435"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "correlated worldline theory",
+    "optomechanics",
+    "Fock states",
+    "replica limit",
+    "quantum measurement"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1103/PhysRevD.109.064078",
+      "scheme": "doi",
+      "relation": "references"
+    },
+    {
+      "identifier": "10.1103/PhysRevD.105.084015",
+      "scheme": "doi",
+      "relation": "references"
+    },
+    {
+      "identifier": "10.1103/PhysRevD.111.104065",
+      "scheme": "doi",
+      "relation": "references"
+    },
+    {
+      "identifier": "10.5281/zenodo.24326219",
+      "scheme": "doi",
+      "relation": "references"
+    }
+  ]
+}
