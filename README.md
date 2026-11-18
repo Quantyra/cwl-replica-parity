@@ -6,7 +6,7 @@ Daniel Fredriksen · Quantyra Inc. · [ORCID](https://orcid.org/0009-0002-9123-7
 
 For a shared pulse with an exact centered Schrödinger–Newton return, the CWL joint-vacuum endpoint has zero rooted weight for odd replica counts and a strictly positive subsequential limit for even counts. The distinction concerns the extension of a specific optical probability prescription to the full quadratic model. The normalized physical detection rate remains open.
 
-This is a standalone draft. The earlier [common-drive Comment](https://doi.org/10.5281/zenodo.24326219) concerns a different pulse and approximation. Its DOI identifies that earlier work.
+Cite version 1.0.0 of this standalone preprint using [10.5281/zenodo.24332848](https://doi.org/10.5281/zenodo.24332848). The [GitHub release](https://github.com/Quantyra/cwl-replica-parity/releases/tag/v1.0.0) includes the manuscript PDF. The earlier [common-drive Comment](https://doi.org/10.5281/zenodo.24326219) concerns a different pulse and approximation.
 
 ## Reproduce the manuscript and arithmetic
 
